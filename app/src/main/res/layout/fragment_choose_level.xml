@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ChooseLevelFragment">
+
+    <TextView
+        android:id="@+id/textViewChooseLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Выберите уровень:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonChooseTest"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="TEST"
+        app:layout_constraintBottom_toTopOf="@+id/buttonChooseEasy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewChooseLevel"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/buttonChooseEasy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="EASY"
+        app:layout_constraintBottom_toTopOf="@+id/buttonChooseNormal"
+        app:layout_constraintEnd_toEndOf="@+id/buttonChooseTest"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/buttonChooseTest"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChooseTest" />
+
+    <Button
+        android:id="@+id/buttonChooseNormal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="NORMAL"
+        app:layout_constraintBottom_toTopOf="@+id/buttonChooseHard"
+        app:layout_constraintEnd_toEndOf="@+id/buttonChooseEasy"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/buttonChooseEasy"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChooseEasy" />
+
+    <Button
+        android:id="@+id/buttonChooseHard"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="HARD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonChooseNormal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/buttonChooseNormal"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChooseNormal" />
+</androidx.constraintlayout.widget.ConstraintLayout>
