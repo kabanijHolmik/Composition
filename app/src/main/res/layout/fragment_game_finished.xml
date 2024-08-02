@@ -61,12 +61,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Процент правильных ответов: s%"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRetry"
         app:layout_constraintStart_toStartOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonRetry"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

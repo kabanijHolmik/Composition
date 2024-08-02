@@ -1,5 +1,6 @@
 package com.example.composition.domain.repository
 
+import androidx.lifecycle.LiveData
 import com.example.composition.domain.entities.GameSettings
 import com.example.composition.domain.entities.Level
 import com.example.composition.domain.entities.Question

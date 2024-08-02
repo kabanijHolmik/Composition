@@ -1,5 +1,6 @@
 package com.example.composition.domain.usecases
 
+import androidx.lifecycle.LiveData
 import com.example.composition.domain.entities.Question
 import com.example.composition.domain.repository.GameRepository
 
